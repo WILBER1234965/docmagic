@@ -1,0 +1,183 @@
+/* Configuración general del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #101820;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a2a6c, #181a28, #fdbb2d);
+    background-size: 300% 300%;
+    animation: gradientBackground 15s ease infinite;
+    overflow: auto;
+}
+
+/* Animación de fondo */
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Contenedor principal con sombra y borde redondeado */
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 30px;
+    background: #282c34;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    overflow: auto;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para títulos principales */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00d9ff;
+    background: linear-gradient(45deg, #00d9ff, #00ff6f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px #00d9ff, 0 0 20px #00d9ff, 0 0 30px #00d9ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ff6f, 0 0 30px #00ff6f, 0 0 40px #00ff6f;
+    }
+}
+
+/* Estilo para subtítulos */
+h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #b5b5b5;
+}
+
+/* Estilo de etiquetas y campos de formulario */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+/* Estilo de los campos de entrada */
+input[type="file"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #4b5563;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="file"]:focus,
+select:focus {
+    border-color: #00d9ff;
+    background-color: #282828;
+}
+
+/* Estilo para el botón principal */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #1e1e1e;
+    background-color: #00ff6f;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00d9ff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 217, 255, 0.4);
+}
+
+/* Estilo para los párrafos seleccionables */
+.paragraph {
+    cursor: pointer;
+    margin: 15px 0;
+    padding: 15px;
+    border: 2px solid #4b5563;
+    border-radius: 8px;
+    background-color: #3a3f47;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.paragraph:hover {
+    background-color: #4a4f57;
+    border-color: #00d9ff;
+    transform: translateX(10px);
+}
+
+/* Estilo de selección con resaltado */
+.highlight {
+    background-color: #ffdd57;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+
+/* Estilo para campos de selección */
+.form-control {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #4b5563;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #333333;
+    color: #ffffff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #00d9ff;
+    background-color: #282828;
+}
+
+/* Animación de desvanecimiento para el contenedor */
+.container {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

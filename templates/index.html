@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Documentos Personalizados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-file-alt"></i> Generador de Documentos Personalizados</h1>
+        <form action="/select_fields" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="word_file">Cargar Documento Word:</label>
+                <input type="file" name="word_file" id="word_file" required>
+            </div>
+            <div class="form-group">
+                <label for="excel_file">Cargar Archivo Excel:</label>
+                <input type="file" name="excel_file" id="excel_file" required>
+            </div>
+            <button type="submit" class="btn">Siguiente <i class="fas fa-arrow-right"></i></button>
+        </form>
+    </div>
+</body>
+</html>
